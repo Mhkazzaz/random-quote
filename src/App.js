@@ -53,7 +53,7 @@ function App() {
       setColor(color => randomDark)
   }, [count]);
 
-  const url = `https://www.facebook.com`
+  const url = `https://mhkazzaz.github.io/random-quote/`
   return (
     <div style={backgroundStyle} className="App container-fluid d-flex align-items-center">
       <div style={quoteBoxStyle} className="quote-box container d-flex flex-column">
@@ -69,12 +69,12 @@ function App() {
             class="btn btn-primary float-right">
             New Quote
           </button> 
-          <a target="_blank" text={quote} href={`https://twitter.com/intent/tweet?text=${quote}--${author}`}>
-            <i class="fab fa-twitter-square fa-3x icons" style={{ color }}></i>
-          </a>
           <FacebookShareButton url={url} quote={`${quote} --${author}`}>
             <i class="fab fa-facebook-square fa-3x icons mr-3" style={{ color }}></i>
           </FacebookShareButton>
+          <a target="_blank" text={quote} href={`https://twitter.com/intent/tweet?text=${quote}--${author}`}>
+            <i class="fab fa-twitter-square fa-3x icons" style={{ color }}></i>
+          </a>          
         </div>   
       </div>
     </div>
